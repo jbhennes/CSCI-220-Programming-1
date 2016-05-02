@@ -1,0 +1,8 @@
+#Example of reading from a file
+
+def main():
+   infile = open("names.txt", "r")
+
+
+   print("Done")
+   infile.close()

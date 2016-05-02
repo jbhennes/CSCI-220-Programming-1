@@ -1,0 +1,6 @@
+
+*** Student Info with 3 grades ***
+Sally Johnson's GPA: 88.000
+Miles Barker's GPA: 86.333
+Janie Doe's GPA: 96.667
+John Doe's GPA: 81.333

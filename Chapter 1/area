@@ -1,0 +1,17 @@
+def main():
+   #alex is right.  This does nothing. It
+   #is in place for the Reader of the code
+   #to help him(generic) understand what the code
+   #does.
+
+   #Set values for variables
+   length = 10
+   width = 5
+
+   #calculate area
+   area = length * width
+
+   #output results
+   print(area)
+
+   

@@ -1,0 +1,78 @@
+Chapter 4:
+1) 	object- a program entity that has some data and a set of operations to manipulate the data
+	class - describes a set of related objects. the class mechanism is used in Python to act as a factory to create objects
+	method - function that lives inside an object. Objects are manipulated by calling their methods
+
+2) clarify the code that is used in the graphics passage!!
+
+3) 	alias - a situation in python when two or more variables refer to the same object in Python, if the object is mutable— the changes through one variable will affect the other variables referring to the object
+  	clone - a copy of another object in a program, however the object cloned isn’t the same bit of data, and can be acted upon separately through its own methods
+
+Chapter 5
+1)	string - data type representing a sequence of characters
+
+2)	len() - function that returns an integer that represents the amount of items in a string, or list
+	index - the way data is arranged in a list or string that increases from 0-n, giving each item its own unique spot in order to manipulate the data
+	slice - extracting a subsequence of a string, list, etc. like range() but instead of indexing through integer positions, it can index through the items in a list or chars in a string >>> a = list[. . .] >>> a[start(inclusive):stop(exclusive):step]
+
+3) Know how to loop through a string or list
+	a = ‘string string string’ >>> a.split(<where to place the split, space by default>)
+
+4)	concat - a = ‘string’ b = ‘string2’ >>> a + b = ‘stringstring2’
+	repitition - a * 2 = ‘stringstring’
+
+5) append, create an empty list, then:
+	list = []
+	a = ‘string’
+	list.append(a)
+	list = [a]
+
+6) ord() - returns the ascii code for the particular character
+	chr() - takes the ascii code and returns the character
+
+7) string library methods -
+	pg 140 in textbook
+8) formatting numeric output -
+	<template-string>.format(<values>)
+	{<index>:<width>.<precision><type>} #used inside the string
+
+9 & 10)
+	read a file:
+	infileName = “jobs.txt”
+	in file = open(infileName, “r”)	#”r” means read
+	also:
+	<file>.read() - whole file in a multi line string
+	<file>.readline() -returns the next line of the file as a string
+	<file>.readlines() - returns a list of remaining lines in the file
+	write to a file:
+	outfileName = “newJobs.txt”
+	out file = open(outfileName, “w”)	#”w” means write
+	also:
+	print(<data we want written to the file>, file = infile)
+	outfile.close()
+
+Chap 6
+1) 	purpose of a function - reduces code duplication, thereby modularizing code and making it much easier to maintain. also, once a function (subprogram) is defined, it can be referred to in other definitions by name.
+
+2) components of a function:
+	def <name of function>(parameter[s]):
+		. . . 
+		body of function
+		. . .
+		return statement- specifically the data that will be returned by the 				function
+
+3) know how to create a function that accepts parameters, and can return strings, numbers, lists, graphics objects
+
+4) 	parameters - a named entity in a function (or method) definition that specifies an argument (or in some cases, arguments) that the function can accept, and in some cases, needs to run
+	argument - a value or values passed to a function when it is called
+
+5)refer to the homework with the triangle and its functions (the last homework) to see how  function can take a parameter that is a mutable object (i.e. a graphic object) but does not return the object
+
+6) know how to trace code that uses a function
+
+7) when a parameter list is being created consider:
+	the order of the formal parameters will reflect the order of the actual parameters by their position
+	however some parameters can be called by name (i.e. file = <filename> in a print statement, or end = “” in print statements)
+	formal parameters are in the definition of the function
+	actual parameters are synonymous with arguments
+	
